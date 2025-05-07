@@ -1,0 +1,38 @@
+///
+/* Light Mode Color */
+///
+:root {
+  --theme-bg-color: #fdfdfd;
+  --text-color: #333333;
+  --border-color: #a7a7a7;
+}
+
+///
+/* Dark Mode Color */
+///
+.dark-mode {
+  --theme-bg-color: #333333;
+  --text-color: #fdfdfd;
+  --border-color: #a7a7a7;
+}
+
+* {
+  margin: 0;
+}
+
+///
+/* Default Color */
+///
+
+/* Font Theme */
+$font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace;
+
+// Mixin for theme styles
+@mixin theme() {
+  background-color: var(--theme-bg-color);
+  color: var(--text-color);
+  font-family: $font-sans;
+}
