@@ -1,0 +1,80 @@
+@import 'global';
+
+.home {
+  width: 100dvw;
+  height: 100dvh;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom left;
+  }
+
+  .my-detail {
+    position: absolute;
+    inset: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 5%;
+    z-index: -1;
+
+    .my-name {
+      font-size: 8dvw;
+      line-height: 0.9;
+    }
+
+    .my-role {
+      display: flex;
+      font-size: 3.5dvw;
+      letter-spacing: 4px;
+      line-height: 0.9;
+
+      .role {
+        letter-spacing: 0px;
+        font-size: 8dvw;
+        line-height: 0.75;
+      }
+
+      &.padding {
+        padding-top: 0.25rem;
+        font-size: 4.5dvw;
+        line-height: 0.9;
+      }
+    }
+
+    .my-text {
+      font-size: 2dvw;
+      line-height: 1.2;
+    }
+  }
+
+  .my-contacts {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+
+    .my-contact-img {
+      display: block;
+      width: 5dvw;
+      height: 5dvw;
+      border: 1px solid var(--border-color);
+      border-radius: 1000px;
+      box-sizing: border-box;
+      padding: 0.75%;
+      margin: 0;
+      svg {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+}

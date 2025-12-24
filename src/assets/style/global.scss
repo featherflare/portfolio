@@ -10,8 +10,8 @@
 ///
 /* Dark Mode Color */
 ///
-.dark-mode {
-  --theme-bg-color: #333333;
+:root[data-theme='dark'] {
+  --theme-bg-color: #121212;
   --text-color: #fdfdfd;
   --border-color: #a7a7a7;
 }

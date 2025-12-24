@@ -3,7 +3,7 @@ import { useState } from 'react'
 function TechStack() {
   return (
     <section>
-      <div></div>
+      <canvas></canvas>
     </section>
   )
 }
